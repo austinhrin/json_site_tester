@@ -1,0 +1,22 @@
+{
+    "login": {
+        "website": "https://github.com/login",
+        "username": "",
+        "password": "",
+        "selenium_commands": [{
+                "type": "input",
+                "xpath": "//*[@id='login_field']",
+                "input_variable": "username"
+            },
+            {
+                "type": "input",
+                "xpath": "//*[@id='password']",
+                "input_variable": "password"
+            },
+            {
+                "type": "button",
+                "xpath": "//*[@id='login']/form/div[4]/input[9]"
+            }
+        ]
+    }
+}
