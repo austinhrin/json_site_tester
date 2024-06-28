@@ -3,7 +3,20 @@
         "website": "https://github.com/login",
         "username": "",
         "password": "",
-        "selenium_commands": [{
+        "success_checks": [
+            {
+                "xpath": "/html/body/div[1]/div[6]/div/div/div/div/div/div/main/div/div/div/feed-container/div[1]/h2",
+                "eq": "Home",
+                "noteq": "emoH"
+            },
+            {
+                "cookie": "logged_in",
+                "eq": "yes",
+                "noteq": "no"
+            }
+        ],
+        "selenium_commands": [
+            {
                 "type": "input",
                 "xpath": "//*[@id='login_field']",
                 "input_variable": "username"
